@@ -7,4 +7,5 @@ node_js:
 before_script:
   - "npm i -g jasmine-node"
 branches:
-  gh_pages: true
+  only:
+    - gh-pages
