@@ -1,7 +1,10 @@
-
-var Algol = (typeof require !== "undefined" ? require("../../algol.js") : window.Algol),
-	_ = (typeof require !== "undefined" ? require("lodash") : window._),
-	R = function(){ return parseInt(_.uniqueId(),10); };
+if (typeof require === 'function' && typeof module === 'object') {
+	var sinon = require('sinon'),
+		jasmineSinon = require('jasmine-sinon'),
+		Algol = require("../../algol.js"),
+		_ = require("../../lodashmixins.js");
+}
+R = function(){ return parseInt(_.uniqueId(),10); };
 
 describe("The time functions",function(){
 	describe("The calcPropVal function",function(){
