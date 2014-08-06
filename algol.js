@@ -1,6 +1,7 @@
 (function(){
 
-var Algol = {};
+var Algol = {},
+	_ = (typeof require !== "undefined" ? require("lodash") : window._);
 
 /**
 	 * Calculates property state at a given time according to startvalue and changes
