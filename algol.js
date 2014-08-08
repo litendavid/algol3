@@ -38,6 +38,7 @@ Algol.moveInDir = function(pos,dir,instruction,board){
  * @returns {Number} The new direction
  */
 Algol.dirRelativeTo = function(dir,relativeto,board){
+	return 666;
 	switch((board || {}).shape){
 		default: return [1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8][relativeto-2+dir];
 	}
